@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        justify-content: center;
+        align-content: center;
+      }
+
+      .flag {
+        /* Poți folosi aceste culori */
+        --sweden-blue: #006aa7;
+        --sweden-yellow: #fecc00;
+
+        width: 40rem;
+        height: 25rem;
+        box-shadow: 0 0 1rem;
+        margin-inline-start: auto;
+        margin-inline-end: auto;
+        display: grid;
+        grid-template-columns: 5fr 2fr 9fr;
+        grid-template-rows: 4fr 2fr 4fr;
+        background-color: #006aa7;
+      }
+
+      .galben-1 {
+        background-color: #fecc00;
+        grid-row-start: 2;
+        grid-row-end: 2;
+        grid-column-start: 1;
+        grid-column-end: 4;
+      }
+
+      .galben-2 {
+        background-color: #fecc00;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Construiește Steagul Suediei în containerul de mai jos</h1>
+    <div class="flag">
+      <div class="grid-element galben-1"></div>
+      <div class="grid-element galben-2"></div>
+    </div>
+  </body>
+</html>
